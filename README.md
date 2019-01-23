@@ -1,2 +1,2 @@
 # stocks-test-app
-Test application using react, redux, socket.io and express
+Test application using react e redux.
