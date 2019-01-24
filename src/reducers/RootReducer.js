@@ -1,5 +1,10 @@
 import { combineReducers } from 'redux';
-import simpleReducer from './SimpleReducer';
+import quoteReducer from './QuoteReducer';
+import companyReducer from './CompanyReducer';
+import chartReducer from './ChartReducer';
+
 export default combineReducers({
-    simpleReducer
+    quoteReducer,
+    companyReducer,
+    chartReducer
 });
