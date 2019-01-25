@@ -27,7 +27,15 @@ const ErroMessage = styled.p`
     align-items: center;
     color:red;
 `;
+const ContentWrapper = styled.div `
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    width:100%;
 
+    
+`;
 class Home extends Component {
     render() {
         console.log(this.props.status );
@@ -49,13 +57,16 @@ class Home extends Component {
                 {this.props.msg}
                 </ErroMessage>
                 }
-                {this.props.companyData.length !== 0 && <InfoCard
-                        companyName={"Company: " + this.props.companyData.companyName}
-                        symbol={"Symbol: " + this.props.companyData.symbol}
-                        exchange={"Exchange: " + this.props.companyData.exchange} 
-                        price={"Price: $" + this.props.stockPrice}
-                    />}
-                <Chart/>
+                {this.props.companyData.length !== 0 &&<ContentWrapper>
+                <InfoCard
+                    companyName={"Company: " + this.props.companyData.companyName}
+                    symbol={"Symbol: " + this.props.companyData.symbol}
+                    exchange={"Exchange: " + this.props.companyData.exchange} 
+                    price={"Price: $" + this.props.stockPrice}
+                />
+                    <Chart/>
+                </ContentWrapper>
+                }
             </section>
         );
     }

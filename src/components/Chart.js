@@ -9,7 +9,6 @@ const ChartWrapper = styled.div`
     max-width:700px;
     width:100%;
     height:320px;
-    margin:20px auto;
     display:flex;
     align-items:center;
     justify-content:center;

@@ -9,7 +9,6 @@ const CardWrapperStyled = styled.div`
     width:auto;
     max-width:500px;
     height:180px;
-    margin:0 auto;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
