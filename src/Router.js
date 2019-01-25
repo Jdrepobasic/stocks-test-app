@@ -9,7 +9,7 @@ class Router extends Component {
     render() {
         return (
         <BrowserRouter>
-            <div className="app">
+            <div>
                 <Route exact path="/" component={Home}/>
             </div>
         </BrowserRouter>

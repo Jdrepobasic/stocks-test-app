@@ -16,6 +16,7 @@ const ChartWrapper = styled.div`
     padding:20px;
     @media (max-width: 400px) {
         height:200px;
+        max-width:300px;
     }
 
 `;
@@ -28,13 +29,12 @@ class Chart extends Component {
                         <LineChart  data={this.props.chartData}
                                     margin={{top: 5, right: 30, left: 20, bottom: 5}}>
                             <XAxis dataKey="label"/>
-                            <YAxis type="number" dataKey="high" domain={['auto', 'auto']}/>
-                            <CartesianGrid strokeDasharray="5 5"/>
+                            <YAxis type="number"  domain={['dataMin - 10', 'dataMax + 10']}/>
+                            <CartesianGrid strokeDasharray="3 3 "/>
                             <Tooltip/>
                             <Legend />
-                            <Line type="monotone" dataKey="high" stroke="blue" activeDot={{r: 8}}/>
-                            <Line type="monotone" dataKey="low" stroke="black" activeDot={{r: 8}}/>
-                            <Line type="monotone" dataKey="average" stroke="red" activeDot={{r: 8}}/>
+                            <Line type="monotone" dataKey="high" stroke="green" />
+                            <Line type="monotone" dataKey="low" stroke="red" />
                         </LineChart>
                     </ResponsiveContainer>
                 </ChartWrapper>
