@@ -16,7 +16,7 @@ Aplicação feita como teste e aprendizado.
 
 ## TESTANDO
 
-Basta entra com um simbolo de alguma ação no input que as informações serão geradas.
+Basta entra com um simbolo de alguma ação no input e clicar no botão que as informações serão geradas.
 
 As informações atualizam de tempo em tempo, é feita uma requisição a cada 3 segundos. 
 
