@@ -22,6 +22,7 @@ As informações atualizam de tempo em tempo, é feita uma requisição a cada 3
 
 No marquee fica gravado os simbolos que foram testados pelo usuario, teste com vários diferente sem reiniciar a página. 
 
+Vale lembrar que as informações só são atualizadas em "tempo real" nos periodos em que o mercado de ações está aberto.
 
 ## Readme Create-react-app
 
